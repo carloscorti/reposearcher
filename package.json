@@ -1,0 +1,25 @@
+{
+  "name": "mvst_task",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "mvst interview task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carlos corti",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.9.6",
+    "@babel/preset-react": "7.9.4",
+    "babel-loader": "8.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "4.0.0"
+  }
+}
