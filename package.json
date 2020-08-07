@@ -5,6 +5,8 @@
   "description": "mvst interview task",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack -wd",
+    "build-webpack": "webpack -p",
     "dev": "nodemon --exec babel-node lib/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,11 +18,17 @@
     "@babel/node": "7.8.7",
     "@babel/preset-env": "7.9.6",
     "@babel/preset-react": "7.9.4",
+    "assets-webpack-plugin": "5.0.3",
     "babel-loader": "8.1.0",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "4.2.1",
     "ejs": "3.1.3",
     "express": "4.17.1",
+    "mini-css-extract-plugin": "0.9.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
