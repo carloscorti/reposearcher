@@ -3,8 +3,6 @@ const AssetsPlugin = require('assets-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtraxtPlugin = require('mini-css-extract-plugin');
 
-const isDev = process.env.NODE_ENV !== 'production';
-
 module.exports = {
   entry: {
     main: './lib/renderers/domRender.js',
@@ -12,14 +10,15 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'public', 'build'),
-    filename: isDev ? '[name].js' : '[name].[contentHash].js',
+    filename: 'js_[name].[contentHash].js',
   },
 
   module: {
     rules: [
       {
         test: /\.(sass|scss|css)$/,
-        use: [MiniCssExtraxtPlugin.loader, 'css-loader', 'sass-loader'],
+        // use: [MiniCssExtraxtPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [MiniCssExtraxtPlugin.loader, 'css-loader'],
       },
       {
         test: /\.js$/,
@@ -39,7 +38,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtraxtPlugin({
-      filename: 'css-[name].[contentHash].css',
+      filename: 'css_[name].[contentHash].css',
     }),
   ],
 
