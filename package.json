@@ -5,12 +5,13 @@
   "description": "mvst interview task",
   "main": "index.js",
   "scripts": {
+    "test": "jest --watchAll",
+    "verify-tests": "jest --coverage",
     "webpack": "webpack -wd",
     "dev": "nodemon --exec babel-node lib/server.js",
     "build-webpack": "webpack -p",
     "build-node": "babel lib -d build --config-file ./babel-node.config.js --copy-files",
-    "start": "set NODE_ENV=production&&node build/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=production&&node build/server.js"
   },
   "keywords": [],
   "author": "carlos corti",
@@ -44,10 +45,22 @@
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
+    "babel-jest": "26.3.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.3",
+    "enzyme-to-json": "3.5.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "4.0.0",
-    "nodemon": "2.0.4"
+    "jest": "26.3.0",
+    "nodemon": "2.0.4",
+    "react-test-renderer": "16.13.1",
+    "redux-mock-store": "1.5.4"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "nodemonConfig": {
     "ignore": [

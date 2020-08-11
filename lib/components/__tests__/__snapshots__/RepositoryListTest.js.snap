@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepositoryList renders correctly 1`] = `
+<Fragment>
+  <section
+    className="repositories"
+  >
+    <div
+      className="pinned-repo-wrapper match"
+    >
+      <div
+        className="pinned-repo"
+      >
+        <p>
+          <b>
+            2
+          </b>
+           repositories matching 
+          <b>
+            testSearch
+          </b>
+        </p>
+      </div>
+    </div>
+    <Repository
+      data={
+        Object {
+          "data": Object {
+            "description": "d1",
+            "html_url": "url1",
+            "language": "l1",
+            "name": "n1",
+            "updated_at": "ud1",
+          },
+          "id": 1,
+        }
+      }
+      key="1"
+    />
+    <Repository
+      data={
+        Object {
+          "data": Object {
+            "description": "d2",
+            "html_url": "url2",
+            "language": "l2",
+            "name": "n2",
+            "updated_at": "ud2",
+          },
+          "id": 2,
+        }
+      }
+      key="2"
+    />
+  </section>
+</Fragment>
+`;

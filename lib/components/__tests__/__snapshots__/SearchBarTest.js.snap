@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar renders correctly 1`] = `
+Array [
+  <nav>
+    <ul
+      className="repo-nav"
+    >
+      <li>
+        Repositories 
+        3
+      </li>
+    </ul>
+  </nav>,
+  <div
+    className="search-bar-wrapper"
+  >
+    <input
+      className="search-bar"
+      onChange={[Function]}
+      placeholder="Find a repository..."
+      type="search"
+      value=""
+    />
+  </div>,
+]
+`;

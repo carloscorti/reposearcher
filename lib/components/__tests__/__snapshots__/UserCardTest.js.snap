@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserCard renders correctly 1`] = `
+<Fragment>
+  <aside>
+    <img
+      src="pic"
+    />
+    <h3>
+      userName
+    </h3>
+    <p
+      className="grey-text bio"
+    >
+      userBio
+    </p>
+  </aside>
+</Fragment>
+`;
