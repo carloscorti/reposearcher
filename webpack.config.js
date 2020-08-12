@@ -19,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.(sass|scss|css)$/,
-        // use: [MiniCssExtraxtPlugin.loader, 'css-loader', 'sass-loader'],
+        // use: [MiniCssExtraxtPlugin.loader, 'css-loader', 'sass-loader'], // in case we use sass
         use: [MiniCssExtraxtPlugin.loader, 'css-loader'],
       },
       {
@@ -34,10 +34,12 @@ module.exports = {
   },
 
   plugins: [
+    // for assets.json list on public folder
     new AssetsPlugin({
       filename: 'assets.json',
       path: path.join(__dirname, 'public'),
     }),
+    // to clean public/build folder each time webpack outputs files
     new CleanWebpackPlugin(),
     new MiniCssExtraxtPlugin({
       filename: 'css_[name].[contentHash].css',
