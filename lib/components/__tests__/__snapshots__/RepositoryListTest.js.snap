@@ -15,7 +15,8 @@ exports[`RepositoryList renders correctly 1`] = `
           <b>
             2
           </b>
-           repositories matching 
+           repositories matching
+           
           <b>
             testSearch
           </b>

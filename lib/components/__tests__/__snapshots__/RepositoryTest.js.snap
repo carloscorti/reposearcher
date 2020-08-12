@@ -8,8 +8,12 @@ exports[`Repository renders correctly 1`] = `
     <div
       className="pinned-repo"
     >
-      <h3 />
-      <p />
+      <h3>
+        n1
+      </h3>
+      <p>
+        d1
+      </p>
       <ul
         className="stats"
       >
@@ -19,7 +23,9 @@ exports[`Repository renders correctly 1`] = `
           >
             🔵
           </span>
-          <span />
+          <span>
+            l1
+          </span>
         </li>
         <li>
           <span
@@ -27,7 +33,7 @@ exports[`Repository renders correctly 1`] = `
           />
           <span>
             Updated 
-            NaN
+            118
              days ago
           </span>
         </li>
@@ -37,6 +43,7 @@ exports[`Repository renders correctly 1`] = `
           />
           <span>
             <a
+              href="url1"
               rel="noopener noreferrer"
               target="_blank"
             >
