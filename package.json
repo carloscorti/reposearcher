@@ -11,7 +11,8 @@
     "dev": "nodemon --exec babel-node lib/server.js",
     "build-webpack": "webpack -p",
     "build-node": "babel lib -d build --config-file ./babel-node.config.js --copy-files",
-    "start": "set NODE_ENV=production&&node build/server.js"
+    "heroku-postbuild": "npm run build-webpack && npm run build-node",
+    "start": "NODE_ENV=production pm2-runtime start build/server.js -i max --name appProd"
   },
   "keywords": [],
   "author": "carlos corti",
@@ -35,6 +36,7 @@
     "lodash.pickby": "4.6.0",
     "mini-css-extract-plugin": "0.9.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
+    "pm2": "4.4.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
