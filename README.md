@@ -36,18 +36,44 @@ npm i
 
 ### Development
 
-1-npm run webpack: Starts webpack watching file for development
+1-
+```
+npm run webpack
+```
 
-2-npm run dev: Runs the app in the development mode. Open http://localhost:8080 to view it in the browser. The page will reload if you make edits.
+Starts webpack watching file for development
+
+2-
+```
+npm run dev
+```
+
+Runs the app in the development mode. Open http://localhost:8080 to view it in the browser. The page will reload if you make edits.
 
 
 ### Production (follow the order below)
 
-1- npm run build-webpack: Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
+1- 
+```
+npm run build-webpack
+```
 
-2- npm run build-node: Builds the node server with ES6 features. It builds server aplication on ./build
+Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
 
-3- npm run start: Starts app for production (uses pm2 for core load optimization)
+2- 
+```
+npm run build-node
+```
+
+Builds the node server with ES6 features. It builds server aplication on ./build
+
+3- 
+```
+npm run build-node
+``` 
+
+Starts app for production (uses pm2 for core load optimization)
+
 
 ## Running the tests
 
@@ -63,9 +89,11 @@ For test coverage
 npm run verify-tests
 ```
 
+
 ## Deployment
 
 Production version deployed at https://mvsttask-carloscorti.herokuapp.com/
+
 
 ## Built With
 
@@ -73,6 +101,7 @@ Production version deployed at https://mvsttask-carloscorti.herokuapp.com/
 - Server side: Node + Express
 - Bundler: webpack + babel
 - Client side: React + Redux with Redux Thunk
+
 
 ## Author
 
