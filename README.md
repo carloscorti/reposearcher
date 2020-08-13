@@ -18,22 +18,6 @@ Search githHub Repos, its a web app to serch into my gitHub repos by name
 
 ## Getting Started
 
-Available Scripts In the project directory, you can run:
-
-**DEVELOPMENT**
-
-1-npm run webpack: Starts webpack watching file for development
-
-2-npm run dev: Runs the app in the development mode. Open http://localhost:8080 to view it in the browser. The page will reload if you make edits.
-
-
-**PRODUCTION** (follow the order below)
-
-1- npm run build-webpack: Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
-
-2- npm run build-node: Builds the node server with ES6 features. It builds server aplication on ./build
-
-3- npm run start: Starts app for production (uses pm2 for core load optimization)
 
 ### Installing
 
@@ -48,6 +32,22 @@ On projects root folder, install dependencies
 ```
 npm i
 ```
+
+
+**Development**
+
+1-npm run webpack: Starts webpack watching file for development
+
+2-npm run dev: Runs the app in the development mode. Open http://localhost:8080 to view it in the browser. The page will reload if you make edits.
+
+
+**Production** (follow the order below)
+
+1- npm run build-webpack: Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
+
+2- npm run build-node: Builds the node server with ES6 features. It builds server aplication on ./build
+
+3- npm run start: Starts app for production (uses pm2 for core load optimization)
 
 ## Running the tests
 
