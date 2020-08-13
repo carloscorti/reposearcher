@@ -15,6 +15,7 @@ Search githHub Repos, its a web app to serch into my gitHub repos by name
 - eslint custom config
 - Uses pm2 for production start, forks one app instance for each core avaiable in deployment server
 - Builds webpack and build version directly on depployment server
+- Documented following JSdoc standard
 
 ## Getting Started
 
