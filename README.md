@@ -36,14 +36,14 @@ npm i
 
 ### Development
 
-1-
+First
 ```
 npm run webpack
 ```
 
 Starts webpack watching file for development
 
-2-
+Then
 ```
 npm run dev
 ```
@@ -53,21 +53,21 @@ Runs the app in the development mode. Open http://localhost:8080 to view it in t
 
 ### Production (follow the order below)
 
-1- 
+First
 ```
 npm run build-webpack
 ```
 
 Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
 
-2- 
+Secondly 
 ```
 npm run build-node
 ```
 
 Builds the node server with ES6 features. It builds server aplication on ./build
 
-3- 
+Finally
 ```
 npm run build-node
 ``` 
