@@ -43,6 +43,7 @@ npm run webpack
 
 Starts webpack watching file for development
 
+
 Then
 ```
 npm run dev
@@ -60,12 +61,14 @@ npm run build-webpack
 
 Builds the app for production in ./public/build folder. The build is minified and the filenames include the hashes to prevent bowser cache in future updates.
 
+
 Secondly 
 ```
 npm run build-node
 ```
 
 Builds the node server with ES6 features. It builds server aplication on ./build
+
 
 Finally
 ```
