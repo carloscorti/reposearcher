@@ -73,7 +73,7 @@ Builds the node server with ES6 features. It builds server aplication on ./build
 
 Finally
 ```
-npm run build-node
+npm start
 ``` 
 
 Starts app for production (uses pm2 for core load optimization)
